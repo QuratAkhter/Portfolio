@@ -1,0 +1,118 @@
+.img{
+    width: 100%;
+    border-top-right-radius: 100px; 
+    border-bottom-left-radius: 100px; 
+}
+
+.container{
+    width: 100%;
+}
+
+
+.project-img, .glowing-bar {
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    position: relative;
+    z-index: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-top-right-radius: 100px; 
+    border-bottom-left-radius: 100px; 
+  }
+  
+  @media (max-width: 576px) {
+    .project-img {
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+  }
+  @media (max-width: 576px) {
+    .project-container {
+        margin-top: 0px;
+    }
+  }
+
+  .project-img:before, .glowing-bar:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-top-right-radius: 100px; 
+    border-bottom-left-radius: 100px; 
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .project-img:after, .glowing-bar:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    border-top-right-radius: 100px; 
+    border-bottom-left-radius: 100px; 
+  }
+  
+
+
+
+.text{
+    background-image: url("../assets/text.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.project-container {
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+    border: 1.5px solid rgba(197, 197, 197, 0.18);
+    border-top-left-radius: 100px; 
+    border-bottom-right-radius: 100px; 
+    min-height: 315px;
+}
+.bar{
+  width: 25%;
+  height: 3px;
+  cursor: pointer;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+}

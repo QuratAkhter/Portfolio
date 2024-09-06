@@ -1,0 +1,7 @@
+.main{
+    width: 90%;
+    border-top-right-radius: 100px; 
+    border-bottom-left-radius: 100px; 
+    border: 2px solid grey;
+    background: linear-gradient(135deg, #232526, #414345);
+}

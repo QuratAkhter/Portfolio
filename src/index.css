@@ -1,0 +1,10 @@
+body, html {
+  background-image: url("./assets/back3.jpg");
+  scroll-behavior: smooth;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
